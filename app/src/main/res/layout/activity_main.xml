@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,10 +39,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/bg_gradient"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideline_33"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/IV_background"
@@ -52,7 +51,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline_33"/>
+        app:layout_constraintTop_toBottomOf="@+id/guideline_33" />
 
     <ImageView
         android:layout_width="100dp"
@@ -61,24 +60,22 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_travel_logo"
-        />
+        app:srcCompat="@drawable/ic_travel_logo" />
 
     <TextView
+        style="@style/HeaderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TRA\nVEL"
-        style="@style/HeaderText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/header_offset"/>
+        app:layout_constraintBottom_toBottomOf="@id/header_offset"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/header_offset"
         android:layout_width="10dp"
         android:layout_height="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline_33"
-        />
+        app:layout_constraintTop_toTopOf="@id/guideline_33" />
 
     <View
         android:id="@+id/view"
@@ -92,51 +89,50 @@
 
     <TextView
         android:id="@+id/label_username"
+        style="@style/form_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/form_label"
-        android:text="USERNAME"
         android:paddingTop="15dp"
+        android:text="@string/username"
         app:layout_constraintBottom_toTopOf="@id/guideline_60"
-        app:layout_constraintStart_toStartOf="@id/username"
-        />
+        app:layout_constraintStart_toStartOf="@id/username" />
 
     <EditText
         android:id="@+id/username"
+        style="@style/form_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/form_textview"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_48_right"
-        app:layout_constraintStart_toStartOf="@+id/guideline_48_left"
-        android:hint="email@domain.com"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        app:layout_constraintTop_toBottomOf="@id/guideline_60"
         android:background="@android:color/transparent"
-        />
+        android:hint="@string/email_domain_com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_48_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_48_left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_60" />
 
     <TextView
         android:id="@+id/label_password"
+        style="@style/form_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/form_label"
-        android:text="PASSWORD"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        android:labelFor="@id/password"
+        android:text="@string/password"
         app:layout_constraintStart_toStartOf="@id/username"
-        />
+        app:layout_constraintTop_toBottomOf="@id/username" />
 
     <EditText
         android:id="@+id/password"
+        style="@style/form_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/form_textview"
+        android:background="@android:color/transparent"
+        android:inputType="textPassword"
         android:paddingBottom="15dp"
         app:layout_constraintEnd_toEndOf="@+id/username"
         app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@id/label_password"
-        android:background="@android:color/transparent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/label_password" />
 
     <View
         android:id="@+id/btn_offset"
@@ -150,21 +146,21 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:background="@drawable/bg_gradient"
-        android:text="SING IN"
+        android:text="@string/sing_in"
         android:textColor="@color/snow_white"
         app:layout_constraintBottom_toBottomOf="@+id/password"
         app:layout_constraintEnd_toEndOf="@+id/btn_offset"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
+        style="@style/form_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEW ACCOUNT"
-        style="@style/form_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="24dp"/>
+        android:layout_marginStart="24dp"
+        android:text="@string/new_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

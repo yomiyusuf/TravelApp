@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TravelApp</string>
+    <string name="new_account">NEW ACCOUNT</string>
+    <string name="sing_in">SING IN</string>
+    <string name="password">PASSWORD</string>
+    <string name="email_domain_com">email@domain.com</string>
+    <string name="username">USERNAME</string>
 </resources>
