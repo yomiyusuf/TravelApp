@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@color/snow_white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">70</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:shadowColor">#a2050505</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:fontFamily">@font/aharoni</item>
+        <item name="android:letterSpacing">0.3</item>
+    </style>
+
+    <style name="form_label">
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+    
+    <style name="form_textview">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+    </style>
+
+    <style name="form_text">
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/snow_white</item>
+    </style>
+</resources>
